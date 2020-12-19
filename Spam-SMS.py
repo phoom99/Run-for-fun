@@ -1,5 +1,5 @@
-# Creator: batiscuff
-# Last release: 14/05/2020
+# Creator: phoom 99
+# Last release: 20/12/2020
 import requests, random, datetime, sys, time, argparse, os, json
 from colorama import Fore, Back, Style
 
@@ -18,7 +18,7 @@ def banner():
     os.system("clear")
     logo = """                 
           YT: FiveZone CH          
-              ผู้สนับสนุน: Scriptking SCK
+              ผู้สนับสนุน: ------
     """
     clrs = print(c_color+logo+W)
 
@@ -325,7 +325,7 @@ def start():
 
 
 def menu():
-    print(Fore.CYAN+Style.BRIGHT+"[ยิงเบอร์] ตัวอย่าง +665334****"+Style.RESET_ALL)
+    print(Fore.CYAN+Style.BRIGHT+"[ยิงเบอร์] ตัวอย่าง +6653482****"+Style.RESET_ALL)
     global phone
     phone = input(c_color+"ใส่เบอร์ "+W)
     check_number()
