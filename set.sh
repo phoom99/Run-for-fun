@@ -4,4 +4,3 @@ echo  "รอแปป"
 pip3 ติดตั้ง colorama
 เสียงสะท้อน " "
 echo  "ใกล้เสร็จละ"
-python3 SMS.py
