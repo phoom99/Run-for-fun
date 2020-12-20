@@ -1,2 +1,2 @@
-# Run-for-fun
+# Spam SMS
 Do it for entertainment !!!
