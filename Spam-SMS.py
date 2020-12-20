@@ -12,14 +12,6 @@ nice = (Fore.YELLOW+Style.BRIGHT+"[+] "+
 fail = (Fore.YELLOW+Style.BRIGHT+"[-] "+
     Style.RESET_ALL+Fore.RED+Style.BRIGHT)
 
-
-def banner():
-    os.system("clear")
-    logo = """                           
-              ผู้สนับสนุน: ------
-    """
-    clrs = print(c_color+logo+W)
-
 def check_number():
     if phone:
         try:
